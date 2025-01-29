@@ -26,8 +26,19 @@ namespace DAM_Leccion_0
 
         public void Ejecutar()
         {
-            PersonaModel personaModel = new PersonaModel();
-            personaModel.Nombre = "Hola, aquitoi";
+            PersonaModel personaModel = new PersonaModel()
+            {
+                Nombre = "Hola, aquitoi",
+            };
+
+            BindingContext = personaModel.Nombre;
+
+            //Binding personaBinding = new Binding();
+            //personaBinding.Source = personaModel;//Origen
+            //personaBinding.Path = "Nombre";//Ruta
+            //txtNombre.SetBinding(Entry.TextProperty, personaBinding);//Destino final
+
+            //personaModel.Nombre = "Hola, aquitoi";
             //txtNombre.Text = "Hola, aquitoi";
         }
         private void btnAceptar_Clicked(object sender, EventArgs e)
