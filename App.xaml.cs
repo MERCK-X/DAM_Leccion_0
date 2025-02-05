@@ -1,4 +1,6 @@
-﻿namespace DAM_Leccion_0
+﻿using DAM_Leccion_0.View;
+
+namespace DAM_Leccion_0
 {
     public partial class App : Application
     {

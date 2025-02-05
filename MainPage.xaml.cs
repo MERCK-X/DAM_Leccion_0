@@ -6,6 +6,8 @@ namespace DAM_Leccion_0
     {
         int count = 0;
 
+        public PersonaModel personaModel { get; set; }
+        
         public MainPage()
         {
             InitializeComponent();
@@ -19,12 +21,12 @@ namespace DAM_Leccion_0
 
         public void Ejecutar()
         {
-            PersonaModel personaModel = new PersonaModel()
+            personaModel = new PersonaModel()
             {
                 Nombre = "Hola, aquitoi",
             };
 
-            BindingContext = personaModel.Nombre;
+            BindingContext = personaModel;
 
             //Binding personaBinding = new Binding();
             //personaBinding.Source = personaModel;//Origen
@@ -34,9 +36,12 @@ namespace DAM_Leccion_0
             //personaModel.Nombre = "Hola, aquitoi";
             //txtNombre.Text = "Hola, aquitoi";
         }
+
+        //EVENTO ACEPTAR
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Asistente del sistema", "Se ha guardado el registro en la BD","Aceptar");
+            //DisplayAlert("Asistente del sistema", "Se ha guardado el registro en la BD","Aceptar");
+            personaModel.Nombre = "Juanito Alcachofas";
         }
     }
 
