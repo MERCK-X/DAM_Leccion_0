@@ -41,7 +41,10 @@ namespace DAM_Leccion_0
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
             //DisplayAlert("Asistente del sistema", "Se ha guardado el registro en la BD","Aceptar");
-            personaModel.Nombre = "Juanito Alcachofas";
+            personaModel.Nombre = "Mamerto";
+            personaModel.Apellido = "Rodaciano";
+            personaModel.Edad = "15";
+
         }
     }
 

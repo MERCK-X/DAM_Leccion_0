@@ -37,12 +37,27 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+
+            
             <Entry 
                 x:Name="txtNombre"
                 Text="{Binding Nombre}"
                 Placeholder="escribir un nombre"
                 HorizontalOptions="FillAndExpand" />
+            <Entry 
+                x:Name="txtApellido"
+                Text="{Binding Apellido}"
+                Placeholder="escribir su Apellido"
+                HorizontalOptions="FillAndExpand" />
+            <Entry 
+                x:Name="txtEdad"
+                Text="{Binding Edad}"
+                Placeholder="escribir su Edad"
+                HorizontalOptions="FillAndExpand" />    
 
+            
+            
             <Button
                 x:Name="btnAceptar"
                 Clicked="btnAceptar_Clicked"
