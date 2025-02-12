@@ -8,7 +8,9 @@ namespace DAM_Leccion_0
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+
+            MainPage = new PersonasView();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace DAM_Leccion_0.ViewModel
         public PersonaModel personasModel { get; set; }
 
         public MainPageViewModel() 
-        {
+        { 
             Consultar();
         }
 
@@ -25,17 +25,6 @@ namespace DAM_Leccion_0.ViewModel
                 Edad = "26",
             };
 
-
-
-            //BindingContext = personaModel;
-
-            //Binding personaBinding = new Binding();
-            //personaBinding.Source = personaModel;//Origen
-            //personaBinding.Path = "Nombre";//Ruta
-            //txtNombre.SetBinding(Entry.TextProperty, personaBinding);//Destino final
-
-            //personaModel.Nombre = "Hola, aquitoi";
-            //txtNombre.Text = "Hola, aquitoi";
         }
     }
 }
